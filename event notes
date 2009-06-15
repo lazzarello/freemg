@@ -1,0 +1,6 @@
+event: change of value
+
+if the change is greater than 0.5
+  determine the direction
+  determine the length of change
+  output value to metronome
