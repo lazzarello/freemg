@@ -1,0 +1,14 @@
+#N canvas 631 276 450 300 10;
+#X obj 39 59 key;
+#X obj 99 59 keyup;
+#X obj 38 101 sel 96;
+#X obj 99 101 sel 96;
+#X obj 40 198 outlet;
+#X msg 100 144 0;
+#X msg 35 139 1;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 6 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
