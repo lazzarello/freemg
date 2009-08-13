@@ -1,7 +1,0 @@
-#N canvas 0 22 852 745 10;
-#X obj 75 77 sliderchannel;
-#X obj 195 77 sliderchannel;
-#X obj 316 77 sliderchannel;
-#X obj 431 77 sliderchannel;
-#X obj 547 77 sliderchannel;
-#X obj 660 77 sliderchannel;
