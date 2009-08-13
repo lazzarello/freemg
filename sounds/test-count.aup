@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="test-count_data" version="1.3.0" audacityversion="1.3.3-beta" sel0="6.3790433622" sel1="7.4367510663" vpos="0" h="0.0000000000" zoom="121.9618610224" rate="44100">
+	<tags title="" artist="" album="" track="-1" year="" genre="-1" comments="" id3v2="1"/>
+	<wavetrack name="Audio Track" channel="2" linked="0" offset="0.00000000" rate="44100" gain="1" pan="0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="379904">
+				<waveblock start="0">
+					<simpleblockfile filename="e00007cc.au" len="262144" min="-0.746162" max="0.635363" rms="0.114772"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0000eaf.au" len="117760" min="-0.496509" max="0.7425" rms="0.060802"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
