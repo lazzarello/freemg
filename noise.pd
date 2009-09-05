@@ -1,15 +1,68 @@
-#N canvas 529 22 744 755 10;
-#X obj 72 200 step_detection;
-#X obj 72 35 sliderchannel;
-#X obj 72 252 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 4 22 1276 756 10;
+#X obj 198 380 step_detection;
+#X obj 198 215 sliderchannel;
+#X obj 198 432 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 112 253 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 238 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 153 254 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 279 434 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 153 227 != 1;
-#X obj 72 296 three_step_noise;
-#X obj 67 338 output~;
+#X obj 279 407 != 1;
+#X obj 198 476 three_step_noise;
+#X obj 525 596 output~;
+#X obj 334 380 step_detection;
+#X obj 334 215 sliderchannel;
+#X obj 334 432 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 374 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 415 434 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 415 407 != 1;
+#X obj 334 476 three_step_noise;
+#X obj 470 381 step_detection;
+#X obj 470 216 sliderchannel;
+#X obj 470 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 510 434 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 551 435 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 551 408 != 1;
+#X obj 470 477 three_step_noise;
+#X obj 597 382 step_detection;
+#X obj 597 217 sliderchannel;
+#X obj 597 434 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 637 435 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 678 436 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 678 409 != 1;
+#X obj 597 478 three_step_noise;
+#X obj 728 382 step_detection;
+#X obj 728 217 sliderchannel;
+#X obj 728 434 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 768 435 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 809 436 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 809 409 != 1;
+#X obj 728 478 three_step_noise;
+#X obj 852 382 step_detection;
+#X obj 852 217 sliderchannel;
+#X obj 852 434 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 892 435 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 933 436 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 933 409 != 1;
+#X obj 852 478 three_step_noise;
+#X obj 535 139 emg is totally awesome;
+#X msg 559 103 open 2;
+#X msg 537 71 close;
 #X connect 0 0 2 0;
 #X connect 0 1 3 0;
 #X connect 0 2 5 0;
@@ -20,3 +73,61 @@
 #X connect 5 0 4 0;
 #X connect 6 0 7 0;
 #X connect 6 0 7 1;
+#X connect 8 0 10 0;
+#X connect 8 1 11 0;
+#X connect 8 2 13 0;
+#X connect 9 0 8 0;
+#X connect 10 0 14 0;
+#X connect 11 0 14 1;
+#X connect 12 0 14 2;
+#X connect 13 0 12 0;
+#X connect 14 0 7 0;
+#X connect 14 0 7 1;
+#X connect 15 0 17 0;
+#X connect 15 1 18 0;
+#X connect 15 2 20 0;
+#X connect 16 0 15 0;
+#X connect 17 0 21 0;
+#X connect 18 0 21 1;
+#X connect 19 0 21 2;
+#X connect 20 0 19 0;
+#X connect 21 0 7 0;
+#X connect 21 0 7 1;
+#X connect 22 0 24 0;
+#X connect 22 1 25 0;
+#X connect 22 2 27 0;
+#X connect 23 0 22 0;
+#X connect 24 0 28 0;
+#X connect 25 0 28 1;
+#X connect 26 0 28 2;
+#X connect 27 0 26 0;
+#X connect 28 0 7 0;
+#X connect 28 0 7 1;
+#X connect 29 0 31 0;
+#X connect 29 1 32 0;
+#X connect 29 2 34 0;
+#X connect 30 0 29 0;
+#X connect 31 0 35 0;
+#X connect 32 0 35 1;
+#X connect 33 0 35 2;
+#X connect 34 0 33 0;
+#X connect 35 0 7 0;
+#X connect 35 0 7 1;
+#X connect 36 0 38 0;
+#X connect 36 1 39 0;
+#X connect 36 2 41 0;
+#X connect 37 0 36 0;
+#X connect 38 0 42 0;
+#X connect 39 0 42 1;
+#X connect 40 0 42 2;
+#X connect 41 0 40 0;
+#X connect 42 0 7 0;
+#X connect 42 0 7 1;
+#X connect 43 0 1 0;
+#X connect 43 1 9 0;
+#X connect 43 2 16 0;
+#X connect 43 3 23 0;
+#X connect 43 4 30 0;
+#X connect 43 5 37 0;
+#X connect 44 0 43 0;
+#X connect 45 0 43 0;
