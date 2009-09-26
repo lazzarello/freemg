@@ -1,2 +1,26 @@
 port over firmware loading abstraction to emg-test
-build steping threshold trigger
+initialze enabling first 6 analog inputs
+copy serial input enabler from arduino-input.pd
+
+serial init process
+BEGIN
+  list serial devices
+  configure serial device number
+  open serial device
+  wait 15 seconds
+  report firmware load
+  report version of firmware
+  open analog inputs
+COMMIT;
+
+6 channel trigger thresholds may effect a 6 channel granular synthesizer. Each channel can be manipulated by increasing
+the number of grains as the input values increase
+
+State transitions dont work very well with fluid movement. jagged movement also doesn't accurately reflect the change of
+state. I do not believe that trigger thresholds are a good primary sound source.
+
+rhythmic guitar pattern looping. each channel effects the timestretch ofthe loop. more data produces a slower loop with
+the same pitch.
+
+channel zero (lombar, back) does not produce data often but has a large visual consequence when it does. perhaps a
+threshold trigger may work there to change the looped sample.

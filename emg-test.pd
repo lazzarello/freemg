@@ -192,28 +192,25 @@
 #X obj 739 101 emg is totally awesome;
 #X obj 545 54 t b b;
 #X msg 740 67 open 2;
-#X msg 799 63 analogIns 5 1;
-#N canvas 162 133 610 460 serin 0;
+#X msg 799 63 analogIns 0 2;
+#N canvas 645 64 610 460 serin 0;
 #X obj 59 337 outlet;
-#X obj 59 266 trigger bang anything;
-#X obj 201 286 list;
 #X obj 60 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 0 5 9 1
-12 -262130 -1 -1 0 1;
+12 -262130 -1 -1 2 2;
 #X obj 75 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 1 5 9 1
-12 -262130 -1 -1 0 1;
+12 -262130 -1 -1 1 1;
 #X obj 90 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 2 5 9 1
-12 -262130 -1 -1 0 1;
+12 -262130 -1 -1 1 1;
 #X obj 105 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 3 5 9
-1 12 -262130 -1 -1 0 1;
+1 12 -262130 -1 -1 1 1;
 #X obj 120 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 4 5 9
-1 12 -262130 -1 -1 0 1;
+1 12 -262130 -1 -1 1 1;
 #X obj 135 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 5 5 9
-1 12 -262130 -1 -1 0 1;
+1 12 -262130 -1 -1 1 1;
 #X obj 150 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 6 5 9
 1 12 -262130 -1 -1 0 1;
 #X obj 165 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 7 5 9
 1 12 -262130 -1 -1 0 1;
-#X msg 59 210 analogIns \$1 \$2;
 #X msg 35 106 0 \$1;
 #X msg 70 106 1 \$1;
 #X msg 105 106 2 \$1;
@@ -222,30 +219,33 @@
 #X msg 210 106 5 \$1;
 #X msg 245 106 6 \$1;
 #X msg 280 106 7 \$1;
+#X obj 59 266 trigger bang anything;
+#X obj 201 286 list;
+#X msg 59 210 analogIns \$1 \$2;
 #X msg 202 307 set \$1 \$2 \$3;
-#X connect 1 0 0 0;
-#X connect 1 1 2 0;
-#X connect 2 0 20 0;
-#X connect 3 0 12 0;
-#X connect 4 0 13 0;
-#X connect 5 0 14 0;
-#X connect 6 0 15 0;
-#X connect 7 0 16 0;
-#X connect 8 0 17 0;
-#X connect 9 0 18 0;
+#X connect 1 0 9 0;
+#X connect 2 0 10 0;
+#X connect 3 0 11 0;
+#X connect 4 0 12 0;
+#X connect 5 0 13 0;
+#X connect 6 0 14 0;
+#X connect 7 0 15 0;
+#X connect 8 0 16 0;
+#X connect 9 0 19 0;
 #X connect 10 0 19 0;
-#X connect 11 0 1 0;
-#X connect 12 0 11 0;
-#X connect 13 0 11 0;
-#X connect 14 0 11 0;
-#X connect 15 0 11 0;
-#X connect 16 0 11 0;
-#X connect 17 0 11 0;
-#X connect 18 0 11 0;
-#X connect 19 0 11 0;
+#X connect 11 0 19 0;
+#X connect 12 0 19 0;
+#X connect 13 0 19 0;
+#X connect 14 0 19 0;
+#X connect 15 0 19 0;
+#X connect 16 0 19 0;
+#X connect 17 0 0 0;
+#X connect 17 1 18 0;
+#X connect 18 0 20 0;
+#X connect 19 0 17 0;
 #X connect 20 0 0 0;
 #X coords 0 -1 1 1 120 16 1 60 60;
-#X restore 799 43 pd serin;
+#X restore 798 38 pd serin;
 #X msg 696 65 close;
 #X connect 1 0 2 1;
 #X connect 2 0 3 0;
