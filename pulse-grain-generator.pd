@@ -1,4 +1,4 @@
-#N canvas 274 22 1009 675 10;
+#N canvas 115 22 1009 675 10;
 #X obj 60 633 dac~;
 #N canvas 0 22 450 300 (subpatch) 0;
 #X array p1-spacing 4410 float 1;
@@ -1867,7 +1867,7 @@ the demos;
 #X obj 208 533 metro 300;
 #X obj 41 395 pulsar p1;
 #X floatatom 473 412 5 0 0 0 - - -;
-#X obj 454 534 cnv 10 360 10 empty empty Grain-Envelope 0 -10 0 10
+#X obj 454 529 cnv 10 360 10 empty empty Grain-Envelope 0 -10 0 10
 -233017 -258699 0;
 #X obj 456 18 cnv 10 360 10 empty empty Pulsar(1)-Properties 0 -10
 0 10 -233017 -258699 0;
@@ -1877,7 +1877,7 @@ the demos;
 #X obj 94 588 *~ 1;
 #X msg 167 508 mute;
 #X msg 120 508 unmute;
-#X obj 208 382 cnv 10 150 10 empty empty Output-Peeker-(left) 0 -10
+#X obj 208 374 cnv 10 150 10 empty empty Output-Peeker-(left) 0 -10
 0 10 -233017 -258699 0;
 #X msg 455 339 bang;
 #X text 595 478 <-- Phasor controlling pulsar train loop time 1000
