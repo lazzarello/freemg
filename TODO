@@ -1,6 +1,5 @@
-port over firmware loading abstraction to emg-test
-initialze enabling first 6 analog inputs
 copy serial input enabler from arduino-input.pd
+port over firmware loading abstraction to emg-test
 
 serial init process
 BEGIN
@@ -16,11 +15,8 @@ COMMIT;
 6 channel trigger thresholds may effect a 6 channel granular synthesizer. Each channel can be manipulated by increasing
 the number of grains as the input values increase
 
-State transitions dont work very well with fluid movement. jagged movement also doesn't accurately reflect the change of
-state. I do not believe that trigger thresholds are a good primary sound source.
+rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
+the same pitch. four channels effect the volume of 4 samples.
 
-rhythmic guitar pattern looping. each channel effects the timestretch ofthe loop. more data produces a slower loop with
-the same pitch.
-
-channel zero (lombar, back) does not produce data often but has a large visual consequence when it does. perhaps a
-threshold trigger may work there to change the looped sample.
+channel zero (lombar, back) does not produce data often but has a large visual consequence when it does. make it a
+threshold trigger to change the looped sample.
