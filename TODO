@@ -1,6 +1,21 @@
+__TODO__
 copy serial input enabler from arduino-input.pd
 port over firmware loading abstraction to emg-test
 
+__NOTES__
+particle chamber. envelope and length are two most important parameters for live manipulation. Asynch and Vox relate to
+each other and produce more chaos as they are increased
+
+6 channel trigger thresholds may effect a 6 channel granular synthesizer. Each channel can be manipulated by increasing
+the number of grains as the input values increase
+
+rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
+the same pitch. four channels effect the volume of 4 samples.
+
+channel zero (lombar, back) does not produce data often but has a large visual consequence when it does. make it a
+threshold trigger to change the looped sample.
+
+__STRUCTURE__
 serial init process
 BEGIN
   list serial devices
@@ -11,12 +26,3 @@ BEGIN
   report version of firmware
   open analog inputs
 COMMIT;
-
-6 channel trigger thresholds may effect a 6 channel granular synthesizer. Each channel can be manipulated by increasing
-the number of grains as the input values increase
-
-rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
-the same pitch. four channels effect the volume of 4 samples.
-
-channel zero (lombar, back) does not produce data often but has a large visual consequence when it does. make it a
-threshold trigger to change the looped sample.
