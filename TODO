@@ -1,6 +1,5 @@
 __TODO__
 make patch for dorkbot demo with pet synth and sinewave crossfader
-write buffer for analog values to prevent excessive CPU consumption.
 particlechamber mapping
 aggregate abstraction scaling
 copy serial input enabler from arduino-input.pd
