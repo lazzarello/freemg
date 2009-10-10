@@ -1,21 +1,21 @@
-#N canvas 4 22 1276 756 10;
+#N canvas 378 22 886 747 10;
 #X obj 96 59 s 1-zample_number;
 #X obj 12 52 cnv 15 450 150 empty empty file_granulator 300 140 0 14
 -71869 -66577 0;
 #X obj 23 57 tgl 20 1 gran1-mute empty empty 0 -6 0 8 -258699 -1 -1
 1 1;
 #X obj 52 59 vsl 20 96 -100 20 0 0 gran1gain empty empty 5 12 0 12
--44926 -1 -1 5500 1;
+-44926 -1 -1 6600 1;
 #X obj 87 81 hsl 100 15 2 200 0 1 1-zample_envelope_min 1-envelope
-envelope 6 7 0 8 -262144 -1 -1 9900 1;
+envelope 6 7 0 8 -262144 -1 -1 3186 1;
 #X obj 195 81 nbx 5 14 0 50 0 1 1-zample_envelope_sprd empty range
 60 8 0 10 -262144 -1 -1 14 256;
 #X obj 87 102 hsl 100 15 1 5000 0 1 1-zample_sustain_min 1-length length
-6 7 0 8 -262144 -1 -1 1897 1;
+6 7 0 8 -262144 -1 -1 6988 1;
 #X obj 195 103 nbx 5 14 0 100 0 1 1-zample_sustain_sprd empty range
 60 8 0 10 -262144 -1 -1 16 256;
 #X obj 87 123 hsl 100 15 0 100 0 1 1-zample_gain_min 1-gain gain 6
-7 0 8 -262144 -1 -1 6677 1;
+7 0 8 -262144 -1 -1 6735 1;
 #X obj 195 124 nbx 5 14 0 100 0 1 1-zample_gain_sprd empty range 60
 8 0 10 -262144 -1 -1 10 256;
 #X obj 87 143 hsl 100 15 0 100 0 1 1-zample_pan_sprd empty stereo_spread
@@ -23,21 +23,21 @@ envelope 6 7 0 8 -262144 -1 -1 9900 1;
 #X obj 198 143 hsl 75 15 0 120 0 1 gran1pan empty pan 1 8 0 8 -262144
 -1 -1 3700 1;
 #X obj 198 162 hsl 75 15 1 32 0 1 1-zample_voices 1-voices vox 15 9
-0 8 -262144 -1 -1 636 1;
+0 8 -262144 -1 -1 716 1;
 #X obj 87 162 hsl 100 15 99 0 0 1 1-zample_asynch 1-asynch asynch 15
-9 0 8 -262144 -1 -1 890 1;
+9 0 8 -262144 -1 -1 6975 1;
 #X obj 84 59 hradio 15 1 1 8 empty 1-samples sample_number 20 7 0 8
--262144 -1 -1 3;
+-262144 -1 -1 0;
 #X obj 296 143 nbx 5 14 0 10000 0 1 readspread empty grain_spread 60
 7 0 10 -262144 -1 -1 10 256;
 #X obj 468 52 cnv 15 200 150 empty empty reverb 130 140 0 14 -71869
 -66577 0;
 #X obj 477 58 tgl 20 1 rev-mute empty empty 0 -6 0 8 -258699 -1 -1
-1 1;
+0 1;
 #X obj 506 60 vsl 20 96 -100 20 0 0 reverbgain empty empty 5 12 0 12
 -44926 -1 -1 0 1;
 #X obj 542 59 hsl 100 15 0 99 0 1 reverb_room empty room_size 6 7 0
-8 -262144 -1 -1 6200 1;
+8 -262144 -1 -1 7000 1;
 #X obj 542 82 hsl 100 15 0 100 0 1 reverb_damp empty damping 6 7 0
 8 -262144 -1 -1 1500 1;
 #X obj 542 124 hsl 100 15 0 100 0 1 reverb_wetdry empty dry/wet 6 7
@@ -45,11 +45,11 @@ envelope 6 7 0 8 -262144 -1 -1 9900 1;
 #X obj 542 144 hsl 100 15 0 127 0 1 reverb_width empty stereo_width
 6 7 0 8 -262144 -1 -1 5700 1;
 #X obj 296 80 nbx 5 14 -1e+37 1e+37 0 0 readpositionin tableloc scan_target
-60 7 0 10 -62784 -1 -1 61 256;
+60 7 0 10 -62784 -1 -1 770 256;
 #X obj 296 102 nbx 6 14 -1e+37 1e+37 0 0 empty scan_speed scan_interpolation
-60 7 0 10 -62784 -1 -1 0.6 256;
+60 7 0 10 -62784 -1 -1 1152 256;
 #X obj 296 163 nbx 5 14 0 10000 0 0 empty ave_g_length ave_grain_length
-60 7 0 10 -62784 -1 -1 1358.89 256;
+60 7 0 10 -62784 -1 -1 3661.03 256;
 #X obj 468 206 cnv 15 200 150 empty empty empty 130 140 0 14 -71869
 -66577 0;
 #N canvas 0 22 450 300 cpu 0;
@@ -244,19 +244,19 @@ envelope 6 7 0 8 -262144 -1 -1 9900 1;
 #X restore 475 236 pd guts;
 #X text 527 211 click 2 load samples;
 #X obj 476 283 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
--258699 -1 -1 20 256;
+-258699 -1 -1 18 256;
 #X text 496 308 x 1;
 #X obj 475 211 cnv 15 51 16 empty empty empty 20 12 0 14 -233017 -66577
 0;
-#N canvas 173 22 450 300 load 1;
+#N canvas 173 22 450 300 load 0;
 #X msg 21 44 bang;
 #N canvas 0 22 450 300 zample-loader1 0;
 #X obj 72 78 inlet;
 #X obj 71 110 openpanel;
 #X obj 71 195 soundfiler;
 #N canvas 0 22 450 300 (subpatch) 0;
-#X array 1-zample 151040 float 0;
-#X coords 0 1 151039 -1 120 30 1;
+#X array 1-zample 273920 float 0;
+#X coords 0 1 273919 -1 120 30 1;
 #X restore 130 134 graph;
 #X obj 71 251 s 1-zample_size;
 #X msg 81 216 \; 1-zample resize \$1;
@@ -403,12 +403,12 @@ envelope 6 7 0 8 -262144 -1 -1 9900 1;
 #X connect 14 0 7 0;
 #X restore 475 211 pd load;
 #X obj 87 182 hsl 100 15 0 500 0 1 jitter 1-jitter jitter 15 9 0 8
--262144 -1 -1 620 1;
+-262144 -1 -1 0 1;
 #X obj 296 124 nbx 5 14 -1e+37 1e+37 0 0 empty 1-zample_start_min current_position
-60 7 0 10 -62784 -1 -1 58.3788 256;
+60 7 0 10 -62784 -1 -1 770 256;
 #X obj 12 206 cnv 15 450 150 empty empty empty 300 140 0 14 -71869
 -66577 0;
-#X obj 18 209 grid grid1 440 0 1000 125 1 10000 1 1 1 30 20 45 347
+#X obj 18 209 grid grid1 440 0 1000 125 1 10000 1 1 1 30 20 357 310
 ;
 #N canvas 553 214 692 396 table_locator 0;
 #X obj 229 18 inlet;
@@ -539,47 +539,47 @@ in learning more.;
 #X obj 623 384 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 493 383 open 2;
-#X obj 661 642 s 1-envelope;
-#X text 658 664 range: 2 - 200;
-#X obj 343 648 s 1-length;
-#X text 338 669 range: 1 - 5000;
+#X obj 765 611 s 1-envelope;
+#X obj 662 605 s 1-length;
 #X obj 447 611 s 1-asynch;
-#X text 445 632 range: 99 - 0;
-#X obj 572 642 s 1-voices;
-#X text 569 663 range: 1 - 32;
+#X obj 341 611 s 1-voices;
 #X obj 236 705 s 1-samples;
 #X obj 229 636 sel 1;
 #X obj 229 607 > 0.3;
 #X obj 496 666 aggregate;
-#X obj 767 646 s 1-jitter;
+#X obj 555 608 s 1-jitter;
 #X obj 502 695 s 1-gain;
 #X obj 230 660 random 6;
-#X text 766 667 range: 0 - 500;
+#X text 554 629 range: 0 - 500;
+#X text 338 632 range: 4 - 32;
+#X text 445 632 range: 5 - 99;
+#X text 657 626 range: 100 - 5000;
+#X text 762 633 range: 10 - 200;
 #X connect 14 0 0 0;
 #X connect 27 0 30 0;
 #X connect 37 0 38 0;
 #X connect 37 1 38 1;
 #X connect 39 0 38 2;
-#X connect 48 0 67 0;
-#X connect 49 0 63 0;
-#X connect 50 0 61 0;
-#X connect 51 0 69 0;
-#X connect 52 0 59 0;
+#X connect 48 0 63 0;
+#X connect 49 0 60 0;
+#X connect 50 0 59 0;
+#X connect 51 0 65 0;
+#X connect 52 0 58 0;
 #X connect 53 0 57 0;
 #X connect 54 0 48 0;
-#X connect 54 0 68 0;
+#X connect 54 0 64 0;
 #X connect 54 1 49 0;
-#X connect 54 1 68 1;
+#X connect 54 1 64 1;
 #X connect 54 2 50 0;
-#X connect 54 2 68 2;
+#X connect 54 2 64 2;
 #X connect 54 3 51 0;
-#X connect 54 3 68 3;
+#X connect 54 3 64 3;
 #X connect 54 4 52 0;
-#X connect 54 4 68 4;
+#X connect 54 4 64 4;
 #X connect 54 5 53 0;
-#X connect 54 5 68 5;
+#X connect 54 5 64 5;
 #X connect 55 0 54 1;
 #X connect 56 0 54 0;
-#X connect 66 0 71 0;
-#X connect 67 0 66 0;
-#X connect 68 0 70 0;
+#X connect 62 0 67 0;
+#X connect 63 0 62 0;
+#X connect 64 0 66 0;

@@ -1,20 +1,15 @@
 __TODO__
-make patch for dorkbot demo with pet synth and sinewave crossfader
-particlechamber mapping
-aggregate abstraction scaling
-copy serial input enabler from arduino-input.pd
+make crossfader
+why is the CPU consuption for incoming serial data so high?
+allow sliders to accept range parameters
+allow emg object to accept configuration symbols for buffer length
+refine serial input enabler from arduino-input.pd
 port firmware loading abstraction to emg-test
 
 __NOTES__
-particle chamber. envelope and length are two most important parameters for live manipulation. Asynch and Vox relate to
-each other and produce more chaos as they are increased
 
 rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
 the same pitch. four channels effect the volume of 4 samples.
-
-channel zero (lombar, back) does not produce data often but has a large visual consequence when it does. make it a
-threshold trigger to change the looped sample. make it store a single random value and output that when the threshold
-first exits the range.
 
 __STRUCTURE__
 serial init process

@@ -192,7 +192,7 @@
 #X obj 739 101 emg is totally awesome;
 #X obj 545 54 t b b;
 #X msg 740 67 open 2;
-#X msg 799 63 analogIns 0 2;
+#X msg 799 63 analogIns 5 1;
 #N canvas 645 64 610 460 serin 0;
 #X obj 59 337 outlet;
 #X obj 60 61 tgl 15 0 junk_to_hide_inlet ARDUINO_TEST_RESET 0 5 9 1
