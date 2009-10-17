@@ -39,6 +39,6 @@
 #X connect 14 0 16 0;
 #X connect 15 0 3 0;
 #X connect 16 0 0 0;
-#X connect 17 0 3 0;
-#X connect 18 0 2 0;
+#X connect 17 0 2 0;
+#X connect 18 0 3 0;
 #X coords 0 0 1 1 75 150 2 -212 -400;
