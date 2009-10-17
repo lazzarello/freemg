@@ -1,5 +1,9 @@
 __TODO__
+add lpf to breathing sample output for particlechamber
+load breathing and haieeee samples onload
 refine serial input enabler from arduino-input.pd
+remapping!
+use bonk~ for sample changes on channel zero for particlechamber
 make crossfader
 port firmware loading abstraction to emg-test
 
@@ -15,8 +19,7 @@ red 1
 yellow 2
 teal 3
 
-__STRUCTURE__
-serial init process
+__ARDUINO INIT STRUCTURE__
 BEGIN
   list serial devices
   configure serial device number

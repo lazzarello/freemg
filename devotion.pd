@@ -1,79 +1,95 @@
-#N canvas 2 22 1276 754 10;
-#X obj 69 87 emg is totally awesome;
-#X obj 128 426 three_chord;
-#X obj 298 605 output~;
-#X msg 89 55 open 2;
-#X msg 69 33 close;
-#X obj 129 515 *~ 0;
-#X obj 191 518 *~ 0;
-#X obj 138 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#N canvas 2 22 968 723 10;
+#X obj 67 120 emg is totally awesome;
+#X obj 126 459 three_chord;
+#X obj 296 638 output~;
+#X msg 87 88 open 2;
+#X msg 67 66 close;
+#X obj 127 548 *~ 0;
+#X obj 189 551 *~ 0;
+#X obj 136 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 272 427 pulsetrain;
-#X obj 273 521 *~ 0;
-#X obj 149 490 r bus1;
-#X obj 212 492 r bus1;
-#X obj 331 519 *~ 0;
-#X obj 607 564 s bus1;
-#X obj 704 564 s bus2;
-#X obj 294 489 r bus2;
-#X obj 352 489 r bus2;
-#X obj 404 521 *~ 0;
-#X obj 492 522 *~ 0;
-#X obj 425 489 r bus3;
-#X obj 513 492 r bus3;
-#X obj 404 426 particlechamber;
-#X text 597 52 range: 0 - 500;
-#X text 485 48 range: 5 - 99;
-#X text 702 56 range: 100 - 5000;
-#X text 817 59 range: 10 - 200;
-#X obj 796 563 s bus3;
-#X msg 383 87 4;
-#X msg 421 87 32;
-#X text 284 51 particlechamber;
-#X text 380 30 range: 4 - 32;
-#X text 381 15 voices;
-#X text 487 29 asynch;
-#X text 605 33 jitter;
-#X text 704 38 length;
-#X text 819 40 envelope;
-#X msg 489 87 5;
-#X msg 526 87 99;
-#X msg 600 87 0;
-#X msg 642 87 500;
-#X msg 707 87 100;
-#X msg 752 87 5000;
-#X msg 817 91 10;
-#X msg 862 87 200;
-#X obj 382 52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 270 460 pulsetrain;
+#X obj 271 554 *~ 0;
+#X obj 147 523 r bus1;
+#X obj 210 525 r bus1;
+#X obj 329 552 *~ 0;
+#X obj 605 597 s bus1;
+#X obj 702 597 s bus2;
+#X obj 292 522 r bus2;
+#X obj 350 522 r bus2;
+#X obj 402 554 *~ 0;
+#X obj 490 555 *~ 0;
+#X obj 423 522 r bus3;
+#X obj 511 525 r bus3;
+#X obj 402 459 particlechamber;
+#X text 595 85 range: 0 - 500;
+#X text 483 81 range: 5 - 99;
+#X text 700 89 range: 100 - 5000;
+#X text 815 92 range: 10 - 200;
+#X obj 794 596 s bus3;
+#X msg 381 120 4;
+#X msg 419 120 32;
+#X text 282 84 particlechamber;
+#X text 378 63 range: 4 - 32;
+#X text 379 48 voices;
+#X text 485 62 asynch;
+#X text 603 66 jitter;
+#X text 702 71 length;
+#X text 817 73 envelope;
+#X msg 487 120 5;
+#X msg 524 120 99;
+#X msg 598 120 0;
+#X msg 640 120 500;
+#X msg 705 120 100;
+#X msg 750 120 5000;
+#X msg 815 124 10;
+#X msg 860 120 200;
+#X obj 380 85 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 129 224 sliderchannel;
-#X obj 225 225 sliderchannel;
-#X obj 321 225 sliderchannel;
-#X obj 404 226 sliderchannel;
-#X obj 486 227 sliderchannel;
-#X obj 567 226 sliderchannel;
-#X obj 607 402 sliderchannel;
-#X obj 704 402 sliderchannel;
-#X obj 796 402 sliderchannel;
-#X msg 225 85 0;
-#X msg 259 86 0.5;
-#X obj 224 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 127 257 sliderchannel;
+#X obj 223 258 sliderchannel;
+#X obj 319 258 sliderchannel;
+#X obj 402 259 sliderchannel;
+#X obj 484 260 sliderchannel;
+#X obj 565 259 sliderchannel;
+#X obj 605 435 sliderchannel;
+#X obj 702 435 sliderchannel;
+#X obj 794 435 sliderchannel;
+#X msg 248 118 0;
+#X msg 282 119 0.5;
+#X obj 247 92 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X text 192 56 init;
-#X obj 157 256 cnv 15 20 60 empty empty empty 20 12 0 14 -159808 -66577
+#X text 215 89 init;
+#X obj 155 289 cnv 15 20 60 empty empty empty 20 12 0 14 -159808 -66577
 0;
-#X obj 254 256 cnv 15 20 60 empty empty empty 20 12 0 14 -258113 -66577
+#X obj 252 289 cnv 15 20 60 empty empty empty 20 12 0 14 -258113 -66577
 0;
-#X obj 350 256 cnv 15 20 60 empty empty empty 20 12 0 14 -257985 -66577
+#X obj 348 289 cnv 15 20 60 empty empty empty 20 12 0 14 -257985 -66577
 0;
-#X obj 436 257 cnv 15 20 60 empty empty empty 20 12 0 14 -4032 -66577
+#X obj 434 290 cnv 15 20 60 empty empty empty 20 12 0 14 -4032 -66577
 0;
+#X floatatom 165 88 5 0 0 0 - - -;
+#X text 160 66 buffer (ms);
+#X obj 24 204 s 1-gain;
+#X obj 24 176 aggregate;
+#X obj 508 458 r 1-gain;
+#X floatatom 508 482 5 0 0 0 - - -;
+#X obj 21 19 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X msg 21 46 digital 13 \$1;
+#X text 41 19 sync;
 #X connect 0 0 45 0;
+#X connect 0 0 65 0;
 #X connect 0 1 46 0;
+#X connect 0 1 65 1;
 #X connect 0 2 47 0;
+#X connect 0 2 65 2;
 #X connect 0 3 48 0;
+#X connect 0 3 65 3;
 #X connect 0 4 49 0;
+#X connect 0 4 65 4;
 #X connect 0 5 50 0;
+#X connect 0 5 65 4;
 #X connect 1 0 5 0;
 #X connect 1 1 6 0;
 #X connect 3 0 0 0;
@@ -148,3 +164,8 @@
 #X connect 55 0 50 2;
 #X connect 56 0 54 0;
 #X connect 56 0 55 0;
+#X connect 62 0 0 2;
+#X connect 65 0 64 0;
+#X connect 66 0 67 0;
+#X connect 68 0 69 0;
+#X connect 69 0 0 0;
