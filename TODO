@@ -1,15 +1,14 @@
 __TODO__
-make crossfader
-why is the CPU consuption for incoming serial data so high?
-allow sliders to accept range parameters
-allow emg object to accept configuration symbols for buffer length
+add particle chamber to devotion patch
 refine serial input enabler from arduino-input.pd
+make crossfader
 port firmware loading abstraction to emg-test
 
 __NOTES__
 
 rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
 the same pitch. four channels effect the volume of 4 samples.
+why is the CPU consuption for incoming serial data so high?
 
 __STRUCTURE__
 serial init process
