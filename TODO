@@ -1,23 +1,12 @@
 __TODO__
+develop sync toggle for emg object
 add lpf to breathing sample output for particlechamber
-load breathing and haieeee samples onload
-refine serial input enabler from arduino-input.pd
-remapping!
-use bonk~ for sample changes on channel zero for particlechamber
-make crossfader
-port firmware loading abstraction to emg-test
+breathing and haieeee samples onload
+use bonk~ for sample changes on attack detection
 
 __NOTES__
-
 rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
 the same pitch. four channels effect the volume of 4 samples.
-why is the CPU consuption for incoming serial data so high?
-
-__COLORS__
-purple 0
-red 1
-yellow 2
-teal 3
 
 __ARDUINO INIT STRUCTURE__
 BEGIN
@@ -28,4 +17,5 @@ BEGIN
   report firmware load
   report version of firmware
   open analog inputs
+  turn on digital output 13
 COMMIT;
