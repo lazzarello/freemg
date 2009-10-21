@@ -647,7 +647,7 @@ byte left over;
 #X restore 32 229 pd convert to symbolic commands;
 #X text 27 331 (C) Copyright 2006-2008 Free Software Foundation;
 #X text 334 330 released under the GNU GPL v2 or later;
-#X obj 32 143 flatspace/comport \$1 9600;
+#X obj 32 143 flatspace/comport \$1 \$2;
 #X connect 0 0 3 0;
 #X connect 3 0 13 0;
 #X connect 5 0 6 0;

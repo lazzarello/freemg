@@ -1,7 +1,7 @@
 __TODO__
-develop sync toggle for emg object
-add lpf to breathing sample output for particlechamber
+init firmware on arduino sync
 breathing and haieeee samples onload
+create equal pressure curve for crossfader
 use bonk~ for sample changes on attack detection
 
 __NOTES__
