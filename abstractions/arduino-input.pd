@@ -216,7 +216,7 @@
 #X obj 550 77 tgl 15 1 empty ARDUINO_PINMODE_RESET 13 0 -6 1 12 -260818
 -1 -1 1 1;
 #X text 328 44 turn on output mode for each pin (off=input);
-#X msg 329 118 pinMode 13 1;
+#X msg 329 118 pinMode 2 1;
 #N canvas 69 607 475 352 sending 0;
 #X obj 69 208 cnv 15 100 22 empty empty empty 20 12 0 14 -253938 -66577
 0;

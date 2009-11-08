@@ -1,5 +1,5 @@
-#N canvas 309 22 867 601 10;
-#X obj 83 18 emg is totally awesome;
+#N canvas 308 22 808 707 10;
+#X obj 56 -32 emg is totally awesome;
 #X obj 68 371 three_chord;
 #X obj 231 518 output~;
 #X obj 68 424 *~ 0;
@@ -9,8 +9,8 @@
 #X obj 89 397 r bus1;
 #X obj 152 399 r bus1;
 #X obj 270 427 *~ 0;
-#X obj 547 509 s bus1;
-#X obj 644 509 s bus2;
+#X obj 507 527 s bus1;
+#X obj 604 527 s bus2;
 #X obj 233 397 r bus2;
 #X obj 291 397 r bus2;
 #X obj 343 429 *~ 0;
@@ -18,7 +18,7 @@
 #X obj 364 397 r bus3;
 #X obj 452 400 r bus3;
 #X obj 344 371 particlechamber;
-#X obj 736 508 s bus3;
+#X obj 696 526 s bus3;
 #X text 657 276 particlechamber;
 #X obj 635 279 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -42,9 +42,9 @@
 #X obj 235 169 sliderchannel;
 #X obj 318 170 sliderchannel;
 #X obj 400 171 sliderchannel;
-#X obj 547 347 sliderchannel;
-#X obj 644 347 sliderchannel;
-#X obj 736 347 sliderchannel;
+#X obj 507 365 sliderchannel;
+#X obj 604 365 sliderchannel;
+#X obj 696 365 sliderchannel;
 #X obj 333 142 r preset-3;
 #X obj 416 140 r preset-4;
 #X obj 506 140 r preset-5;
@@ -87,7 +87,7 @@
 #X connect 17 0 11 0;
 #X restore 578 302 pd presets;
 #X obj 580 245 hsl 128 15 0 100 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 9994 1;
 #X obj 577 217 r gain-1;
 #X obj 333 530 recorder;
 #X obj 430 202 cnv 15 20 60 empty empty empty 20 12 0 14 -228856 -66577
