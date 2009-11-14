@@ -9,6 +9,9 @@ reflexs
   sinedrone
 resistance
   drone + botbugs
+transition
+  fade out botbugs
+    fade out drone
 tethered movement
   particlechamber
     breathing

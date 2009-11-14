@@ -1,21 +1,21 @@
-#N canvas 518 183 739 589 10;
+#N canvas 418 22 739 589 10;
 #X obj 96 59 s 1-zample_number;
 #X obj 12 52 cnv 15 450 150 empty empty file_granulator 300 140 0 14
 -71869 -66577 0;
 #X obj 23 57 tgl 20 1 gran1-mute empty empty 0 -6 0 8 -258699 -1 -1
 1 1;
 #X obj 52 59 vsl 20 96 -100 20 0 0 gran1gain empty empty 5 12 0 12
--44926 -1 -1 7500 1;
+-44926 -1 -1 6300 1;
 #X obj 87 81 hsl 100 15 2 200 0 1 1-zample_envelope_min 1-envelope
-envelope 6 7 0 8 -262144 -1 -1 400 1;
+envelope 6 7 0 8 -262144 -1 -1 0 1;
 #X obj 195 81 nbx 5 14 0 50 0 1 1-zample_envelope_sprd empty range
 60 8 0 10 -262144 -1 -1 14 256;
 #X obj 87 102 hsl 100 15 1 5000 0 1 1-zample_sustain_min 1-length length
-6 7 0 8 -262144 -1 -1 1335 1;
+6 7 0 8 -262144 -1 -1 0 1;
 #X obj 195 103 nbx 5 14 0 100 0 1 1-zample_sustain_sprd empty range
 60 8 0 10 -262144 -1 -1 16 256;
 #X obj 87 123 hsl 100 15 0 100 0 1 1-zample_gain_min gain-1 gain 6
-7 0 8 -262144 -1 -1 435 1;
+7 0 8 -262144 -1 -1 0 1;
 #X obj 195 124 nbx 5 14 0 100 0 1 1-zample_gain_sprd empty range 60
 8 0 10 -262144 -1 -1 10 256;
 #X obj 87 143 hsl 100 15 0 100 0 1 1-zample_pan_sprd empty stereo_spread
@@ -23,9 +23,9 @@ envelope 6 7 0 8 -262144 -1 -1 400 1;
 #X obj 198 143 hsl 75 15 0 120 0 1 gran1pan empty pan 1 8 0 8 -262144
 -1 -1 3700 1;
 #X obj 198 162 hsl 75 15 1 32 0 1 1-zample_voices 1-voices vox 15 9
-0 8 -262144 -1 -1 716 1;
+0 8 -262144 -1 -1 0 1;
 #X obj 87 162 hsl 100 15 99 0 0 1 1-zample_asynch 1-asynch asynch 15
-9 0 8 -262144 -1 -1 0 1;
+9 0 8 -262144 -1 -1 9900 1;
 #X obj 84 59 hradio 15 1 1 8 empty 1-samples sample_number 20 7 0 8
 -262144 -1 -1 0;
 #X obj 296 143 nbx 5 14 0 10000 0 1 readspread empty grain_spread 60
@@ -49,7 +49,7 @@ envelope 6 7 0 8 -262144 -1 -1 400 1;
 #X obj 296 102 nbx 6 14 -1e+37 1e+37 0 0 empty scan_speed scan_interpolation
 60 7 0 10 -62784 -1 -1 1280 256;
 #X obj 296 163 nbx 5 14 0 10000 0 0 empty ave_g_length ave_grain_length
-60 7 0 10 -62784 -1 -1 695.108 256;
+60 7 0 10 -62784 -1 -1 5 256;
 #X obj 468 206 cnv 15 200 150 empty empty empty 130 140 0 14 -71869
 -66577 0;
 #N canvas 0 22 450 300 cpu 0;
@@ -245,13 +245,13 @@ envelope 6 7 0 8 -262144 -1 -1 400 1;
 #X restore 475 236 pd guts;
 #X text 527 211 click 2 load samples;
 #X obj 476 283 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
--258699 -1 -1 24 256;
+-258699 -1 -1 23 256;
 #X text 496 308 x 1;
 #X obj 475 211 cnv 15 51 16 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #N canvas 173 22 450 300 load 0;
 #X msg 21 44 bang;
-#N canvas 0 22 450 300 zample-loader1 0;
+#N canvas 103 474 450 300 zample-loader1 0;
 #X obj 72 78 inlet;
 #X obj 71 110 openpanel;
 #X obj 71 195 soundfiler;
@@ -262,11 +262,15 @@ envelope 6 7 0 8 -262144 -1 -1 400 1;
 #X obj 71 251 s 1-zample_size;
 #X msg 81 216 \; 1-zample resize \$1;
 #X msg 71 173 read -resize -maxsize 1e+07 \$1 1-zample;
+#X msg 126 80 symbol /Users/lee/pd/sounds/heavy_breathing.wav;
+#X obj 126 55 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 6 0;
 #X connect 2 0 5 0;
 #X connect 2 0 4 0;
 #X connect 6 0 2 0;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;
 #X restore 38 123 pd zample-loader1;
 #N canvas 192 190 450 300 zample-loader2 0;
 #X obj 72 78 inlet;
@@ -279,11 +283,15 @@ envelope 6 7 0 8 -262144 -1 -1 400 1;
 #X msg 81 216 \; 2-zample resize \$1;
 #X obj 71 251 s 2-zample_size;
 #X msg 71 173 read -resize -maxsize 1e+07 \$1 2-zample;
+#X obj 136 65 loadbang;
+#X msg 137 89 symbol /Users/lee/pd/sounds/haieee.wav;
 #X connect 0 0 1 0;
 #X connect 1 0 6 0;
 #X connect 2 0 4 0;
 #X connect 2 0 5 0;
 #X connect 6 0 2 0;
+#X connect 7 0 8 0;
+#X connect 8 0 6 0;
 #X restore 38 150 pd zample-loader2;
 #N canvas 0 22 450 300 zample-loader3 0;
 #X obj 72 78 inlet;
@@ -547,6 +555,8 @@ in learning more.;
 #X obj 265 422 s 1-jitter;
 #X obj 458 368 outlet~;
 #X obj 532 370 outlet~;
+#X obj -50 -3 loadbang;
+#X msg -49 25 -20;
 #X connect 14 0 0 0;
 #X connect 27 0 30 0;
 #X connect 28 0 63 0;
@@ -562,3 +572,5 @@ in learning more.;
 #X connect 55 0 62 0;
 #X connect 56 0 59 0;
 #X connect 57 0 58 0;
+#X connect 65 0 66 0;
+#X connect 66 0 3 0;
