@@ -10,8 +10,10 @@ reflexs
 resistance
   drone + botbugs
 transition
-  fade out botbugs
+  fade out botbugs on triangle
     fade out drone
+    rig transition
+      haieeee
 tethered movement
   particlechamber
     breathing
