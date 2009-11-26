@@ -4,4 +4,8 @@ only software component, so it was added as a git repository first.
 
 Created in collaboration with Torino::Margolis and Dana Kotler.
 
+DEPENDENCIES:
+
+Pure Data Extended 0.41.4
+
 --  Lee Azzarello <lee@rockingtiger.com>
