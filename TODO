@@ -1,23 +1,2 @@
-__TODO__
-create equal pressure curve for crossfader
-use bonk~ for sample changes on attack detection
-interferance smoothing algorithm for A/D
-
-__NOTES__
-rhythmic guitar pattern looping. two channels effect timestretched buffer of the mixed audio loop. more data produces a slower loop with
-the same pitch. four channels effect the volume of 4 samples.
-manual chord progressions
-grid loops
-  movements => complexity
-
-__ARDUINO INIT STRUCTURE__
-BEGIN
-  list serial devices
-  configure serial device number
-  open serial device
-  wait 15 seconds
-  report firmware load
-  report version of firmware
-  open analog inputs
-  turn on digital output 13
-COMMIT;
+initialize MIDI toggle to off
+clean up unused abstractions
