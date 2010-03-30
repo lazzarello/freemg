@@ -1,2 +1,2 @@
-initialize MIDI toggle to off
 clean up unused abstractions
+verify buffer is used with line~ in example workspace
