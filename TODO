@@ -1,2 +1,5 @@
+Rewrite control logic
+Enable OSC input from hardware
+Port to a Raspberry Pi 3
 clean up unused abstractions
 verify buffer is used with line~ in example workspace
