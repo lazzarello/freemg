@@ -1,0 +1,11 @@
+This code is the engine for the Electromyographone instrument for transforming voluntary movement from the human body
+into sound. It gives voice to free will. The remainder of the instrument will also be documented, though this is the
+only software component, so it was added as a git repository first.
+
+Created in collaboration with Torino::Margolis and Dana Kotler.
+
+DEPENDENCIES:
+
+Pure Data Extended 0.41.4
+
+--  Lee Azzarello <lee@rockingtiger.com>
