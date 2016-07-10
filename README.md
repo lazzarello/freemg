@@ -29,4 +29,5 @@ The sound patches will probably be written in Pure Data, since I've [previously 
 
 http://www.advancertechnologies.com/  
 http://www.instructables.com/id/Muscle-EMG-Sensor-for-a-Microcontroller/  
-https://hackaday.io/project/4716-synthasense-suit-control-stuff-with-your-muscles/log/15992-a-lesson-in-semg-and-analog-physiological-sensing-electronics/discussion-34754
+https://hackaday.io/project/4716-synthasense-suit-control-stuff-with-your-muscles/log/15992-a-lesson-in-semg-and-analog-physiological-sensing-electronics/discussion-34754  
+http://www.xth.io/forging-a-new-medium-together-through-open-knowledge/
