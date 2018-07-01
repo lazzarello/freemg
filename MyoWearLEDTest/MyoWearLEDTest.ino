@@ -59,7 +59,7 @@ void setup(void) {
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT);
   
-  while (!Serial);  // required for Flora & Micro
+  //while (!Serial);  // required for Flora & Micro
   delay(500);
 
   Serial.begin(115200);
@@ -98,9 +98,9 @@ void setup(void) {
   ble.verbose(false);  // debug info is a little annoying after this point!
 
   /* Wait for connection */
-  while (! ble.isConnected()) {
-      delay(500);
-  }
+  //while (! ble.isConnected()) {
+  //    delay(500);
+  //}
 
   Serial.println(F("******************************"));
 
