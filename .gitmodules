@@ -1,0 +1,3 @@
+[submodule "Adafruit_Python_BluefruitLE"]
+	path = Adafruit_Python_BluefruitLE
+	url = https://github.com/adafruit/Adafruit_Python_BluefruitLE.git
