@@ -24,7 +24,7 @@ RX_CHAR_UUID      = uuid.UUID('6E400003-B5A3-F393-E0A9-E50E24DCCA9E')
 ble = Adafruit_BluefruitLE.get_provider()
 
 osc = OSC.OSCClient()
-osc.connect(('127.0.0.1',57110))
+osc.connect(('127.0.0.1',12000))
 # Main function implements the program logic so it can run in a background
 # thread.  Most platforms require the main thread to handle GUI events and other
 # asyncronous events like BLE actions.  All of the threading logic is taken care
@@ -86,17 +86,21 @@ def main():
         # primitives to send data to other threads.
         def received(data):
             print('Received: {0}'.format(data))
-            oscmsg = OSC.OSCMessage()
-            oscmsg.setAddress("/startup")
-            oscmsg.append(data)
-            osc.send(oscmsg)
+            try:
+                oscmsg = OSC.OSCMessage()
+                oscmsg.setAddress("/feather/pot1")
+                oscmsg.append(data)
+                osc.send(oscmsg)
+            except:
+                e = sys.exc_info()[0]
+                write_to_page( "<p>Error: %s</p>" % e )
 
         # Turn on notification of RX characteristics using the callback above.
         print('Subscribing to RX characteristic changes...')
         rx.start_notify(received)
 
         # Now just wait for 60 seconds to receive data.
-        print('Waiting 60 seconds to receive data from the device...')
+        print('Waiting to receive data from the device...')
         while True:
             time.sleep(1)
     finally:
