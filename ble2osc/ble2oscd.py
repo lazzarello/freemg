@@ -97,7 +97,8 @@ def main():
 
         # Now just wait for 60 seconds to receive data.
         print('Waiting 60 seconds to receive data from the device...')
-        time.sleep(60)
+        while True:
+            time.sleep(1)
     finally:
         # Make sure device is disconnected on exit.
         device.disconnect()
