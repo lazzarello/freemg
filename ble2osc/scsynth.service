@@ -1,0 +1,12 @@
+[Unit]
+Description=A SuperCollider Server
+After=sound.target
+
+[Service]
+LimitRTPRIO=infinity
+LimitMEMLOCK=infinity
+User=pi
+ExecStart=/usr/bin/scsynth -u 12001
+
+[Install]
+WantedBy=multi-user.target

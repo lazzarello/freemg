@@ -1,0 +1,13 @@
+[Unit]
+Description=JACK
+After=sound.target
+
+[Service]
+LimitRTPRIO=infinity
+LimitMEMLOCK=infinity
+User=pi
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket
+ExecStart=/usr/bin/jackd -R -P 75 -d alsa -d hw:pisound -r 48000 -n 2 -p 64 -s
+
+[Install]
+WantedBy=multi-user.target
