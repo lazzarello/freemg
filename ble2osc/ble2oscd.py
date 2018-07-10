@@ -8,6 +8,8 @@ import logging
 import time
 import uuid
 
+# Linux support for Bluez >= 5.38 requires patch to source code
+#https://github.com/adafruit/Adafruit_Python_BluefruitLE/issues/23
 import Adafruit_BluefruitLE
 import OSC
 
