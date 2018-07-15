@@ -7,9 +7,11 @@
 import logging
 import time
 import uuid
+import sys
 
 # Linux support for Bluez >= 5.38 requires patch to source code
 #https://github.com/adafruit/Adafruit_Python_BluefruitLE/issues/23
+# lee@rockingtiger.com applied manually in submodule on 2018-07-07
 import Adafruit_BluefruitLE
 import OSC
 
@@ -94,8 +96,8 @@ def main():
                 oscmsg.append(data)
                 osc.send(oscmsg)
             except:
-                e = sys.exc_info()[0]
-                write_to_page( "<p>Error: %s</p>" % e )
+                e = sys.exc_info()[:2]
+                print( "Error: %s %s" % e )
 
         # Turn on notification of RX characteristics using the callback above.
         print('Subscribing to RX characteristic changes...')
