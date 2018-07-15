@@ -1,3 +1,5 @@
+Server.default=s=Server.remote(~bleh, NetAddr("bleh.noise", 12001));
+
 (
 SynthDef.new(\sawsynth, {|freq = 400, out|
 	Out.ar(out,
@@ -18,3 +20,7 @@ OSCdef.new(\feather,{ |msg, time, addr, recvPort|
 )
 a.free;
 OSCdef.freeAll;
+
+s.sendMsg("/n_set", 1002, "freq", 2000);
+
+s.queryAllNodes

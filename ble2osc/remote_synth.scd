@@ -1,13 +1,19 @@
-r = Server(\bleh, NetAddr("bleh.noise", 12001));
-Server.default = r;
+// Set the default server to a remote instance running on the RPi
+Server.default=s=Server.remote(~bleh, NetAddr("bleh.noise", 12001));
+s.serverRunning;
+s.quit;
+{SinOsc.ar(660,0,0.2)}.play;
+s.sendMsg("/n_free", 1000);
 
 (
 SynthDef("sine", { arg freq=800;
     var osc;
     osc = SinOsc.ar(freq, 0, 0.1); // 800 Hz sine oscillator
     Out.ar(0, osc); // send output to audio bus zero.
-}).send(r); // write the def to disk in the default directory synthdefs/
+}).add; // write the def to disk in the default directory synthdefs/
 )
+a = Synth.new(\sine);
+a.free;
 
 // raw OSC messages
 r.sendMsg("/s_new", "sine", x = r.nextNodeID, 1, 0);
