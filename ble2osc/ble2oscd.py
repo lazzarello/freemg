@@ -28,7 +28,7 @@ RX_CHAR_UUID      = uuid.UUID('6E400003-B5A3-F393-E0A9-E50E24DCCA9E')
 ble = Adafruit_BluefruitLE.get_provider()
 
 osc = OSC.OSCClient()
-osc.connect(('127.0.0.1',12000))
+osc.connect(('127.0.0.1',12001))
 # Main function implements the program logic so it can run in a background
 # thread.  Most platforms require the main thread to handle GUI events and other
 # asyncronous events like BLE actions.  All of the threading logic is taken care
@@ -92,8 +92,10 @@ def main():
             print('Received: {0}'.format(data))
             try:
                 oscmsg = OSC.OSCMessage()
-                oscmsg.setAddress("/feather/pot1")
-                oscmsg.append(data)
+                oscmsg.setAddress("/n_set")
+                oscmsg.append(1002, 'i')
+                oscmsg.append("freq")
+                oscmsg.append(data, 'i')
                 osc.send(oscmsg)
             except:
                 e = sys.exc_info()[:2]
